@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>FilmManagement</display-name>
+  <servlet>
+  <servlet-name>ViewAllActors</servlet-name>
+      <servlet-class>com.capgemini.controller.ViewAllActors</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ViewAllFilms</servlet-name>
+  		<servlet-class>com.capgemini.controller.ViewAllFilms</servlet-class>
+ 	</servlet>
+  <servlet-mapping>
+       <servlet-name>ViewAllActors</servlet-name>
+       <url-pattern>/ViewAllActors</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ViewAllFilms</servlet-name>
+  	<url-pattern>/ViewAllFilms</url-pattern>
+  </servlet-mapping>
+ </web-app>

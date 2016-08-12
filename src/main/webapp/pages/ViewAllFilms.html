@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View All Films</title>
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+<script type="text/javascript" src="../script/appCtrl.js"></script>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+	
+	<h1>Film Details</h1>
+	<table border="1">
+		<tr>
+			<th>Film Id</th>
+			<th>Title</th>
+			<th>Description</th>
+			<th>Release Date</th>
+			<th>Rental Duration</th>
+			<th>Rental Rate</th>
+			<th>Length</th>
+			<th>Replacement Cost</th>
+			<th>Rating</th>
+			<th>Special Features</th>
+		</tr>
+		
+		<tr ng-repeat="film in films">
+			<td>{{film.film_id}}</td>
+			<td>{{film.title}}</td>
+			<td>{{film.description}}</td>
+			<td>{{film.releaseDate}}</td>
+			<td>{{film.rentalDuration}}</td>
+			<td>{{film.rentalRate}}</td>
+			<td>{{film.length}}</td>
+			<td>{{film.replacementCost}}</td>
+			<td>{{film.rating}}</td>
+			<td>{{film.specialFeatures}}</td>
+		</tr>
+		
+	</table>
+
+</div>
+
+
+</body>
+</html>

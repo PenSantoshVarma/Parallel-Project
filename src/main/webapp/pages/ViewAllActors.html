@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View All Actors</title>
+<script type="text/javascript" src="../script/angular.min.js"></script>
+<script type="text/javascript" src="../script/appConfig.js"></script>
+<script type="text/javascript" src="../script/appCtrl.js"></script>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="myCtrl">
+	
+	<h1>Actor Details</h1>
+	<table border="1">
+		<tr>
+			<th>Actor Id</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+		</tr>
+		
+		<tr ng-repeat="atr in actors">
+			<td>{{atr.actor_id}}</td>
+			<td>{{atr.firstName}}</td>
+			<td>{{atr.lastName}}</td>
+		</tr>
+		
+	</table>
+
+</div>
+
+</body>
+</html>
